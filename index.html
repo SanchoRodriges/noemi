@@ -21,9 +21,9 @@
                   <li><a href="#0">Темы</a></li>
                   <li><a href="#0">Контакты</a></li>
                </ul>
-               <div class="menu-show" href="#0">
+               <button class="menu-show">
                   <span></span>
-               </div>
+               </button>
             </nav>
          </div>
          <div class="header-title">
@@ -211,7 +211,7 @@
          </main>
          <aside class="aside">
             <section class="aside-posts">
-               <div class="aside-header">Новые посты</div>
+               <h3 class="aside-header">Новые посты</h3>
                <div class="aside-post">
                   <div class="aside-post-img">
                      <img src="img/2.jpg" alt="10 мест, ради которых стоит проснуться">
@@ -280,7 +280,7 @@
                </form>
             </section>
             <section class="aside-subscribe">
-               <div class="aside-header">Рассылка</div>
+               <h3 class="aside-header">Рассылка</h3>
                <form action="/" class="aside-subscribe-form">
                   <label class="aside-subscribe-label">
                   <span class="visually-hidden">Поле ввода email-адреса</span>
@@ -292,7 +292,7 @@
                </form>
             </section>
             <section class="aside-tags">
-               <div class="aside-header">Теги</div>
+               <h3 class="aside-header">Теги</h3>
                <ul class="aside-tags-list">
                   <li><a href="#0">Fashion</a></li>
                   <li><a href="#0">MuSiC</a></li>
@@ -305,14 +305,14 @@
                </ul>
             </section>
             <section class="aside-themes">
-               <div class="aside-header">Темы</div>
+               <h3 class="aside-header">Темы</h3>
                <ul class="aside-themes-list">
-                  <li><a href="#0">Красота <span>12</span></a></li>
-                  <li><a href="#0">Здоровье <span>4</span></a></li>
-                  <li><a href="#0">Образ жизни <span>145</span></a></li>
-                  <li><a href="#0">Музыка <span>28</span></a></li>
-                  <li><a href="#0">Спорт <span>62</span></a></li>
-                  <li><a href="#0">Йога <span>8</span></a></li>
+                  <li><a href="#0">Красота</a><sup>12</sup></li>
+                  <li><a href="#0">Здоровье</a><sup>4</sup></li>
+                  <li><a href="#0">Образ жизни</a><sup>145</sup></li>
+                  <li><a href="#0">Музыка</a><sup>28</sup></li>
+                  <li><a href="#0">Спорт</a><sup>62</sup></li>
+                  <li><a href="#0">Йога</a><sup>8</sup></li>
                </ul>
             </section>
          </aside>
@@ -324,89 +324,95 @@
                <div class="product-img">
                   <picture>
                      <source srcset="img/shop-item-mobile1.jpg" media="(max-width: 640px)">
-                     <source srcset="img/shop-item-tablet1.jpg" media="(max-width: 1200px)">
-                     <source srcset="img/shop-item-desk1.jpg"
-                        media="(min-width: 1201px)">
-                     <img src="img/shop-item-desk1.jpg" alt="" />
-                  </picture>
-               </div>
-              <div class="product-title">Подушки на диван</div>
-              <div class="product-description">
-                 Набор из двух подушек с модными принтами. Видео о создании <a href="">здесь</a>.
-              </div>
-               <div class="product-shop">
-                  <div class="product-price">
-                     <span class="old-price">
-                     1000 ₽
-                     </span>
-                     <span>
-                     800 ₽
-                     </span>
+                        <source srcset="img/shop-item-tablet1.jpg" media="(max-width: 1200px)">
+                           <source srcset="img/shop-item-desk1.jpg"
+                           media="(min-width: 1201px)">
+                           <img src="img/shop-item-desk1.jpg" alt="" />
+                        </picture>
+                     </div>
+                     <div class="product-content">
+                      <div class="product-title">Подушки на диван</div>
+                      <div class="product-description">
+                         Набор из двух подушек с модными принтами. Видео о создании <a href="">здесь</a>.
+                      </div>
+                      <div class="product-shop">
+                        <div class="product-price">
+                           <span class="old-price">
+                              1000 ₽
+                           </span>
+                           <span>
+                              800 ₽
+                           </span>
+                        </div>
+                        <a href="#0" class="product-button">
+                           В магазин
+                        </a>
+                     </div>
                   </div>
-                  <a href="#0" class="product-button">
-                  В магазин
-                  </a>
                </div>
-            </div>
             <div class="product-item">
-               
-               	<div class="product-img">
-                  <picture>
-                     <source srcset="img/shop-item-mobile2.jpg" media="(max-width: 640px)">
+
+              <div class="product-img">
+               <picture>
+                  <source srcset="img/shop-item-mobile2.jpg" media="(max-width: 640px)">
                      <source srcset="img/shop-item-tablet2.jpg" media="(max-width: 1200px)">
-                     <source srcset="img/shop-item-desk2.jpg"
+                        <source srcset="img/shop-item-desk2.jpg"
                         media="(min-width: 1201px)">
-                     <img src="img/shop-item-desk2.jpg" alt="" />
-                  </picture>
-               </div>
-              <div class="product-title">
-                 Кукла «Зайчик»
-              </div>
-              <div class="product-description">
-                 Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#0">весенняя серия постов</a> в блоге и несколько подкастов.
-              </div>
-				<div class="product-shop">
-                  <div class="product-price">
-                     <span>
-                     3500 ₽
-                     </span>
+                        <img src="img/shop-item-desk2.jpg" alt="" />
+                     </picture>
                   </div>
-                  <a href="#0" class="product-button">
-                  В магазин
-                  </a>
+                  <div class="product-content">
+                   <div class="product-title">
+                      Кукла «Зайчик»
+                   </div>
+                   <div class="product-description">
+                      Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#0">весенняя серия постов</a> в блоге и несколько подкастов.
+                   </div>
+                   <div class="product-shop">
+                     <div class="product-price">
+                        <span>
+                           3500 ₽
+                        </span>
+                     </div>
+                     <a href="#0" class="product-button">
+                        В магазин
+                     </a>
+                  </div>
                </div>
             </div>
             <div class="product-item">
                <div class="product-img">
                   <picture>
                      <source srcset="img/shop-item-mobile3.jpg" media="(max-width: 640px)">
-                     <source srcset="img/shop-item-tablet3.jpg" media="(max-width: 1200px)">
-                     <source srcset="img/shop-item-desk3.jpg"
-                        media="(min-width: 1201px)">
-                     <img src="img/shop-item-desk3.jpg" alt="" />
-                  </picture>
-               </div>
-              <div class="product-title">
-                 Шестиугольная рамка
-              </div>
-              <div class="product-description">
-                 Необычная рамка для украшения дома из видео <a href="#0">«Как сделать рамку из подручных средств за 30 минут»</a>
-              </div>
-               
+                        <source srcset="img/shop-item-tablet3.jpg" media="(max-width: 1200px)">
+                           <source srcset="img/shop-item-desk3.jpg"
+                           media="(min-width: 1201px)">
+                           <img src="img/shop-item-desk3.jpg" alt="" />
+                        </picture>
+                     </div>
+                     <div class="product-content">
+                      <div class="product-title">
+                         Шестиугольная рамка
+                      </div>
+                      <div class="product-description">
+                         Необычная рамка для украшения дома из видео <a href="#0">«Как сделать рамку из подручных средств за 30 минут»</a>
+                      </div>
 
-               <div class="product-shop">
-                  <div class="product-price">
-                     <span class="old-price">
-                     500 ₽
-                     </span>
-                     <span>
-                     400 ₽
-                     </span>
+
+                      <div class="product-shop">
+                        <div class="product-price">
+                           <span class="old-price">
+                              500 ₽
+                           </span>
+                           <span>
+                              400 ₽
+                           </span>
+                        </div>
+                        <a href="#0" class="product-button">
+                           В магазин
+                        </a>
+                     </div>
                   </div>
-                  <a href="#0" class="product-button">
-                  В магазин
-                  </a>
-               </div>
             </div>
          </div>
       </section>
@@ -440,9 +446,8 @@
          </section>
       </footer>
       <div class="popup">
-      	<div class="popup-bg"></div>
       	<form class="popup-form" action="">
-	      	<a href="#0" class="popup-close"></a>
+	      	<button class="popup-close"></button>
 	      	<div class="popup-header">
 	      		Ваш фидбек
 	      	</div>

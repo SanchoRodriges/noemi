@@ -76,6 +76,10 @@ body {
 	margin-left: 33px;
 }
 
+.nav-items-list li:first-child {
+	margin-left: 0;
+}
+
 .nav-items-list li a {
 	font-size: 13px;
 	color: #fff;
@@ -93,6 +97,8 @@ body {
 	height: 20px;
 	position: relative;
 	cursor: pointer;
+	border: 0;
+	background: none;
 }
 
 .menu-show span,
@@ -331,6 +337,9 @@ body {
 	margin-right: 20px;
 }
 
+.trend-tags li:last-child {
+	margin-right: 0;
+}
 .trend-tags a {
 	font-size: 14px;
 	color: #b59f5b;
@@ -449,8 +458,15 @@ body {
 	margin-bottom: 10px;
 }
 
-.main-item-tags a {
+.main-item-tags li {
 	margin-right: 18px;
+}
+
+.main-item-tags li:last-child {
+	margin-right: 0;
+}
+
+.main-item-tags a {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 14px;
@@ -561,18 +577,16 @@ body {
 
 	.main-item {
 		display: flex;
-		justify-content: space-between;
 		border: 0;
 		margin-bottom: 58px;
 	}
 
 	.main-item-img {
-		width: 381px;
-		margin: 0;
+		min-width: 381px;
+		margin: 0 30px 0 0;
 	}
 
 	.main-item-content {
-		width: calc( 100% - 410px );
 		margin: 0;
 	}
 
@@ -771,23 +785,26 @@ body {
 	padding-top: 0px;
 }
 
+.aside-themes-list li:last-child {
+	padding-bottom: 0px;
+}
+
 .aside-themes-list a {
 	color: #000000;
 	font-size: 14px;
 	font-weight: bold;
 	text-decoration: none;
-	position: relative;
 }
 
 .aside-themes-list a:hover {
 	color: #b59f5b;
 }
 
-.aside-themes-list span {
+.aside-themes-list sup {
 	font-size: 12px;
 	color: #b59f5b;
-	position: absolute;
-	top: -3px;
+	font-weight: bold;
+	margin-left: 3px;
 }
 
 @media (min-width: 641px) and (max-width: 1200px) {
@@ -878,13 +895,14 @@ body {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-content: flex-start;
-	border: 3px solid #b59f5b;
-	padding: 0 22px 25px;
 }
 
 .product-img  {
-	margin-bottom: 20px;
 	z-index: -1;
+}
+
+.product-content {
+	border: 3px solid #b59f5b;
 }
 
 .product-title {
@@ -951,11 +969,12 @@ body {
 
 	.product-item {
 		width: 100%;
-		margin-top: 290px;
+		margin-top: 30px;
 	}
 
-	.product-img  {
-		margin-top: -260px;
+	.product-content {
+		margin: -30px 0 20px;
+		padding: 40px 7% 7%;
 	}
 
 }
@@ -968,11 +987,13 @@ body {
 
 	.product-item {
 		width: 48%;
-		margin: 198px 0 20px;
+		margin-bottom: 20px;
 	}
 
-	.product-img  {
-		margin-top: -200px;
+	.product-content {
+		margin: -40px 0 20px;
+		padding: 50px 7% 7%;
+		min-height: 270px;
 	}
 
 }
@@ -980,14 +1001,13 @@ body {
 @media (min-width: 1200px) {
 
 	.product-item {
-		width: 30%;
-		margin: 174px 0 30px;
-		padding: 0 22px 22px;
+		width: 32%;
 	}
 
-	.product-img  {
-		margin-top: -170px;
-		margin-bottom: 15px;
+	.product-content {
+		margin: -50px 0 30px;
+		padding: 60px 7% 7%;
+		min-height: 280px;
 	}
 
 	.products-header {
@@ -1024,6 +1044,14 @@ body {
 	justify-content: center;
 }
 
+.footer-social-list li {
+	margin-right: 28px;
+}
+
+.footer-social-list li:last-child {
+	margin-right: 0;
+}
+
 .footer-social-list a {
 	display: block;
 	width: 20px;
@@ -1031,7 +1059,6 @@ body {
 	background-size: 20px 20px;
 	background-repeat: no-repeat;
 	background-position: center center;
-	margin: 0 14px;
 }
 
 .footer-social-twitter {
@@ -1098,29 +1125,29 @@ body {
 	right: 0;
 	bottom: 0;
 	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.popup-bg {
-	width: 100%;
-	height: 100%;
-	background-color: #000;
+.popup::after {
+	content: "";
+	background-color: #000000;
+	position: absolute;
 	opacity: 0.6;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 }
 
 .popup-form {
-	position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+	position: relative;
 	width: 90%;
 	max-width: 390px;
-	margin: 100px auto;
 	padding: 48px 28px;
 	background-color: #ffffff;
 	z-index: 20;
-	display: flex;
-	flex-direction: column;
 	font-size: 13px;
 }
 
@@ -1134,6 +1161,9 @@ body {
 	background-size: contain;
 	right: 0;
 	top: -25px;
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
 }
 
 .popup-header {
@@ -1171,6 +1201,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: right 15px center;
 	background-size: 10px;
+	width: 100%;
 }
 
 .popup-select:focus {
@@ -1220,6 +1251,7 @@ body {
 	font-family: inherit;
 	resize: none;
 	margin-bottom: 25px;
+	width: 100%;
 }
 
 
