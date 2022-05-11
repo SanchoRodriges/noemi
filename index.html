@@ -10,7 +10,7 @@
       <header class="header">
          <div class="header-row">
             <div class="logo">
-               <img src="svg/noemi-logo.svg" alt="">
+               <a href="#0"><img src="svg/noemi-logo.svg" alt="логотип Noemi"></a>
             </div>
             <nav class="nav-items">
                <ul class="nav-items-list">
@@ -33,10 +33,7 @@
       <section class="trends">
          <div class="trends-header">Сейчас в тренде</div>
          <div class="trends-row">
-            <div class="trends-item">
-               <div class="trends-img">
-                  <img src="img/trend1.jpg" alt="">
-               </div>
+            <div class="trends-item trends-first">
                <div class="trend-content">
                   <div class="trend-tags">
                      <ul>
@@ -49,10 +46,7 @@
                   </div>
                </div>
             </div>
-            <div class="trends-item">
-               <div class="trends-img">
-                  <img src="img/trend2.jpg" alt="">
-               </div>
+            <div class="trends-item trends-second">
                <div class="trend-content">
                   <div class="trend-tags">
                      <ul>
@@ -64,10 +58,7 @@
                   </div>
                </div>
             </div>
-            <div class="trends-item">
-               <div class="trends-img">
-                  <img src="img/trend3.jpg" alt="">
-               </div>
+            <div class="trends-item trends-third">
                <div class="trend-content">
                   <div class="trend-tags">
                      <ul>
@@ -80,10 +71,7 @@
                   </div>
                </div>
             </div>
-            <div class="trends-item">
-               <div class="trends-img">
-                  <img src="img/trend4.jpg" alt="">
-               </div>
+            <div class="trends-item trends-fourth">
                <div class="trend-content">
                   <div class="trend-tags">
                      <ul>
@@ -307,12 +295,12 @@
             <section class="aside-themes">
                <h3 class="aside-header">Темы</h3>
                <ul class="aside-themes-list">
-                  <li><a href="#0">Красота</a><sup>12</sup></li>
-                  <li><a href="#0">Здоровье</a><sup>4</sup></li>
-                  <li><a href="#0">Образ жизни</a><sup>145</sup></li>
-                  <li><a href="#0">Музыка</a><sup>28</sup></li>
-                  <li><a href="#0">Спорт</a><sup>62</sup></li>
-                  <li><a href="#0">Йога</a><sup>8</sup></li>
+                  <li><a href="#0">Красота</a><span>12</span></li>
+                  <li><a href="#0">Здоровье</a><span>4</span></li>
+                  <li><a href="#0">Образ жизни</a><span>145</span></li>
+                  <li><a href="#0">Музыка</a><span>28</span></li>
+                  <li><a href="#0">Спорт</a><span>62</span></li>
+                  <li><a href="#0">Йога</a><span>8</span></li>
                </ul>
             </section>
          </aside>
@@ -447,10 +435,10 @@
       </footer>
       <div class="popup">
       	<form class="popup-form" action="">
-	      	<button class="popup-close"></button>
-	      	<div class="popup-header">
+	      	<button class="popup-close"><span class="visually-hidden">Закрыть форму</span></button>
+	      	<h3 class="popup-header">
 	      		Ваш фидбек
-	      	</div>
+	      	</h3>
       		<p>Как часто вы заходите на сайт?</p>
       		<select class="popup-select" name="select">
       			<option value="value1" selected>Почти каждый день</option>
